@@ -1,0 +1,117 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navbar-brand {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: white;
+}
+
+.home-container {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+}
+
+body {
+  background-color: #001f3f; /* Dark blue background */
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: white; /* Ensure text is visible on dark background */
+}
+
+.left-column {
+  flex: 1.2; /* 1/4th of the container */
+  background-color: #002a55; /* Slightly different dark blue for contrast */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2%;
+}
+
+.right-column {
+  flex: 2.8; /* 3/4th of the container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1, p {
+  margin: 10px;
+}
+
+.webcam {
+  width: 100%; /* Full width of the right column */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.search-container {
+  width: 100%;
+  background-color: #add8e6; /* Light blue background */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.input-group {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px 0px auto;
+}
+
+.form-control {
+  width: calc(100% - 50px); 
+  padding: 20px auto;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 1px solid #001f3f;
+  display: inline-block;
+  height: 101%;
+}
+
+.btn {
+  margin-left: 20px;
+  padding: 6px 12px;
+}
+
+.search-result {
+  margin-top: 20px;
+  border: 1px solid black;
+  padding: 10px;
+  min-height: 50px;
+  color: black; /* Changed to black for better visibility on light blue background */
+}
